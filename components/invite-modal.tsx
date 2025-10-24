@@ -56,7 +56,7 @@ export function InviteModal({
           </p>
           <div className="space-y-2">
             <Input placeholder="Invite Code" className="text-center h-10 rounded-xl text-xs border-gray-900 placeholder:text-zinc-400" />
-            <Button size="default" className="w-full h-10 rounded-xl text-xs bg-gray-900 text-white">Unlock Access</Button>
+            <Button size="default" className="w-full rounded-xl text-xs bg-gray-900 text-white">Unlock Access</Button>
           </div>
         </div>
       </DialogContent>

@@ -13,7 +13,7 @@ export function ConciergeButton() {
         <div className="mb-4 bg-[#F5E6D3] border border-gray-600 rounded-2xl shadow-2xl animate-in slide-in-from-bottom-4 overflow-hidden w-36">
           <Button
             variant="ghost"
-            className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
+            className="w-full justify-center pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
             onClick={() => (window.location.href = "mailto:concierge@beyondexperiences.com")}
           >
             <span>Email</span>
@@ -21,7 +21,7 @@ export function ConciergeButton() {
           </Button>
           <Button
             variant="ghost"
-            className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
+            className="w-full justify-center pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
             onClick={() => window.open("https://api.whatsapp.com/send?phone=233504513123&text=Hi%20beyond%20team%2C%20", "_blank")}
           >
             <span>WhatsApp</span>
@@ -31,7 +31,7 @@ export function ConciergeButton() {
           </Button>
           <Button
             variant="ghost"
-            className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
+            className="w-full justify-center pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
             onClick={() => (window.location.href = "tel:+233504513123")}
           >
             <span>Call</span>
@@ -39,7 +39,7 @@ export function ConciergeButton() {
           </Button>
           <Button
             variant="ghost"
-            className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 relative"
+            className="w-full justify-center pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 relative"
             onClick={() => setIsOpen(false)}
           >
             <span>Close</span>
@@ -52,7 +52,7 @@ export function ConciergeButton() {
         <Button
           size="default"
           onClick={() => setIsOpen(true)}
-          className="h-10 px-8 bg-[#F5E6D3] text-gray-800 hover:bg-[#F5E6D3]/90 rounded-2xl shadow-2xl font-medium"
+          className="px-8 bg-[#F5E6D3] text-gray-800 hover:bg-[#F5E6D3]/90 rounded-2xl shadow-2xl font-medium"
         >
           Concierge
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

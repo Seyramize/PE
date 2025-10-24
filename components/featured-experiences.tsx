@@ -37,7 +37,7 @@ export function FeaturedExperiences() {
       defaultContent: {
         title: "Dolphin Watching and Snorkeling",
         image: "/cover.jpeg",
-        shortDescription: "Adventure and calm meet on Volta Lake. Abseil from rocky cliffs, kayak through quiet waters, and end the day with a golden-hour boat cruise under the open sky.",
+        shortDescription: "The waters off São Tomé are alive with life.",
         location: "São Tomé"
       },
       bookingLink: "https://www.experiencesbybeyond.com/book-experience/dolphin-watching-and-snorkeling",
@@ -84,12 +84,12 @@ export function FeaturedExperiences() {
                         </p>
                         <div className="space-y-6">
                           <Link href={experience.bookingLink}>
-                            <Button className="bg-gray-900  text-white hover:bg-gray-900/90 font-sans px-12 py-4 rounded-lg text-xs w-full mb-1.5">
+                            <Button className="bg-gray-900  text-white hover:bg-gray-900/90 font-sans px-12 rounded-lg text-xs w-full mb-1.5">
                               Book this experience
                             </Button>
                           </Link>
                           <Link href={"https://www.experiencesbybeyond.com/experiences"}>
-                            <Button variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-sans text-xs px-12 py-4 rounded-lg w-full mb-4">
+                            <Button variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-sans text-xs px-12 rounded-lg w-full mb-4">
                               Explore experiences
                             </Button>
                           </Link>

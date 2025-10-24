@@ -4,7 +4,7 @@ import Link from "next/link"
 export function CityGuides() {
   const cities = [
     {
-      name: "Accra, Ghana",
+      name: "Ghana",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: "/accra-ghana-independence-arch-monument.jpg",
       bgColor: "bg-[#F5E6D3]", // Champagne
@@ -12,7 +12,7 @@ export function CityGuides() {
       link: "/city/accra-ghana",
     },
     {
-      name: "Lagos, Nigeria",
+      name: "Nigeria",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: "/lagos-nigeria-windmill-landmark.jpg",
       bgColor: "bg-[#2D5016]", // Green
@@ -20,7 +20,7 @@ export function CityGuides() {
       link: "/city/lagos-nigeria",
     },
     {
-      name: "Nairobi, Kenya",
+      name: "Namibia",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: "/nairobi-kenya-skyline-cityscape.jpg",
       bgColor: "bg-[#D97642]", // Orange
@@ -28,7 +28,7 @@ export function CityGuides() {
       link: "/city/nairobi-kenya",
     },
     {
-      name: "Sao Tome, Sao Tome",
+      name: "Sao Tome",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: "/cape-town-table-mountain-landscape.jpg",
       bgColor: "bg-[#1A2332]", // Blue-black
