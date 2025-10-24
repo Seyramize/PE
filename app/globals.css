@@ -1,15 +1,47 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('/fonts/helvetica-now-display/HelveticaNowDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src: url('/fonts/helvetica-now-display/HelveticaNowDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArgentCF';
+  src: url('/fonts/argent-cf/Argent-CF-Demi-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArgentCF';
+  src: url('/fonts/argent-cf/Argent-CF-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
   /* Updated color palette for luxury portal aesthetic */
-  --background: oklch(0.97 0.01 85); /* Warm cream */
+  --background: oklch(1 0 0); /* White */
   --foreground: oklch(0.15 0.02 265); /* Deep navy */
-  --card: oklch(0.98 0.005 85);
+  --card: oklch(1 0 0);
   --card-foreground: oklch(0.15 0.02 265);
-  --popover: oklch(0.98 0.005 85);
+  --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0.02 265);
   --primary: oklch(0.15 0.02 265); /* Deep navy */
   --primary-foreground: oklch(0.97 0.01 85); /* Cream */
@@ -124,10 +156,21 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'HelveticaNowDisplay', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'ArgentCF', serif;
+    font-weight: 600;
   }
 }
 
 @layer utilities {
+  .font-serif {
+    font-family: 'ArgentCF', serif;
+  }
+  .font-sans {
+    font-family: 'HelveticaNowDisplay', sans-serif;
+  }
   .scrollbar-visible {
     scrollbar-width: thin;
     scrollbar-color: oklch(0.45 0.01 265) oklch(0.92 0.01 85);

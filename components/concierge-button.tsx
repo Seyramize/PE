@@ -10,7 +10,7 @@ export function ConciergeButton() {
   return (
     <div className="fixed bottom-8 right-8 z-50">
       {isOpen && (
-        <div className="mb-4 bg-[#F5E6D3] border border-gray-200 rounded-2xl shadow-2xl animate-in slide-in-from-bottom-4 overflow-hidden w-36">
+        <div className="mb-4 bg-[#F5E6D3] border border-gray-600 rounded-2xl shadow-2xl animate-in slide-in-from-bottom-4 overflow-hidden w-36">
           <Button
             variant="ghost"
             className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
@@ -22,7 +22,7 @@ export function ConciergeButton() {
           <Button
             variant="ghost"
             className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
-            onClick={() => window.open("https://wa.me/1234567890", "_blank")}
+            onClick={() => window.open("https://api.whatsapp.com/send?phone=233504513123&text=Hi%20beyond%20team%2C%20", "_blank")}
           >
             <span>WhatsApp</span>
             <svg className="h-5 w-5 absolute right-4" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ export function ConciergeButton() {
           <Button
             variant="ghost"
             className="w-full justify-center h-12 pl-2 pr-4 hover:bg-white/20 rounded-none text-gray-700 border-b border-gray-300 relative"
-            onClick={() => (window.location.href = "tel:+1234567890")}
+            onClick={() => (window.location.href = "tel:+233504513123")}
           >
             <span>Call</span>
             <Phone className="h-5 w-5 absolute right-4" />
@@ -50,7 +50,7 @@ export function ConciergeButton() {
 
       {!isOpen && (
         <Button
-          size="lg"
+          size="default"
           onClick={() => setIsOpen(true)}
           className="h-10 px-8 bg-[#F5E6D3] text-gray-800 hover:bg-[#F5E6D3]/90 rounded-2xl shadow-2xl font-medium"
         >

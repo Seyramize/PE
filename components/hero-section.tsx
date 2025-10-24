@@ -15,13 +15,12 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         {/* Main Heading */}
-        <h1 className="font-serif text-5xl font-light leading-tight text-white md:text-8xl lg:text-9xl text-balance mb-6">
-          <span className="block">Unlock the</span>
-          <span className="block text-5xl md:text-9xl lg:text-[10rem]">extraordinary</span>
+        <h1 className="font-serif text-5xl font-light leading-tight text-white text-balance mb-3">
+          Unlock the extraordinary
         </h1>
         
         {/* Description */}
-        <p className="max-w-2xl text-lg text-white/90 md:text-lg text-pretty leading-relaxed">
+        <p className="max-w-2xl text-sm text-white/90 text-pretty leading-tight">
           Your beyond access card unlocks a world of curated travel, luxury events, and private invitations - all in one place.
         </p>
       </div>

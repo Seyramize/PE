@@ -35,7 +35,7 @@ export function CityGuides() {
   return (
     <section className="bg-background py-2 px-6 pb-1">
       <div className="mx-auto max-w-7xl">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-2">
           <h2 className="font-serif text-3xl font-light text-foreground">City Guides</h2>
           <Building2 className="h-6 w-6 text-foreground" strokeWidth={1.5} />
         </div>
@@ -55,10 +55,10 @@ export function CityGuides() {
                     className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <div className={`flex-1 px-2 py-3 flex flex-col justify-center items-center text-center ${city.textColor}`}>
-                  <h3 className="font-serif text-lg font-light mb-0">{city.name}</h3>
+                <div className={`flex-1 px-4 py-3 flex flex-col justify-center items-start text-left ${city.textColor}`}>
+                  <h3 className="font-serif text-xl font-normal leading-tight mb-0">{city.name}</h3>
                   <p
-                    className={`text-xs leading-tight ${city.textColor === "text-white" ? "opacity-90" : "opacity-75"}`}
+                    className={`text-[11px] leading-tight text-pretty ${city.textColor === "text-black" ? "opacity-90" : "opacity-75"}`}
                   >
                     {city.description}
                   </p>

@@ -23,7 +23,7 @@ export function InviteCodeSection() {
             
             {/* Text Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-              <h2 className="font-serif text-3xl font-light text-white mb-3">Got an invite code?</h2>
+              <h2 className="font-serif text-3xl font-light leading-tight text-white mb-0.5">Got an invite code?</h2>
               <p className="text-white/90 text-xs leading-tight whitespace-nowrap">
                 Unlock invite only experiences with your curator's unique code.
               </p>
@@ -32,21 +32,21 @@ export function InviteCodeSection() {
 
           {/* Bottom Section - White Background */}
           <div className="px-8 pt-8 pb-6 text-center">
-            <p className="text-gray-700 text-lg mb-3">
+            <p className="text-gray-700 text-sm leading-tight mb-3">
               Enter your invite code to unlock your experience.
             </p>
             
-            <div className="space-y-4">
+            <div className="space-y-2">
               <Input
                 type="text"
                 placeholder="Invite Code"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
-                className="h-12 bg-gray-50 text-gray-900 border border-gray-900 rounded-2xl px-4 text-center text-sm placeholder-gray-400"
+                className="h-10 bg-gray-50 text-gray-900 border border-gray-900 rounded-2xl px-4 text-center text-xs placeholder-gray-400"
               />
               <Button
-                size="lg"
-                className="w-full h-12 bg-[#1A2332] text-white hover:bg-[#1A2332]/90 rounded-2xl text-sm font-medium"
+                size="default"
+                className="w-full h-10 bg-[#1A2332] text-white hover:bg-[#1A2332]/90 rounded-2xl text-xs font-medium"
               >
                 Unlock Access
               </Button>
