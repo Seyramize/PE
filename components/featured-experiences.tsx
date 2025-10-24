@@ -9,46 +9,50 @@ export function FeaturedExperiences() {
   const experiences = [
     {
       id: "1",
-      slug: "canvas-soul",
+      slug: "accra-city-tour",
       defaultContent: {
-        title: "Canvas & Soul",
-        image: "/art-gallery-interior-modern-paintings.jpg",
-        shortDescription: "Curated art experiences that inspire and transform",
+        title: "Accra City Tour",
+        image: "/hero.jpg",
+        shortDescription: "Accra is a city alive with history, rhythm, and everyday energy.",
         location: "Ghana"
       },
+      bookingLink: "https://www.experiencesbybeyond.com/book-experience/accra-city-tour",
       tags: []
     },
     {
       id: "2", 
-      slug: "desert-escape",
+      slug: "sandwich-harbour-exploration",
       defaultContent: {
-        title: "Desert Escape",
-        image: "/luxury-desert-resort-sunset.jpg",
-        shortDescription: "Luxury retreats in stunning desert landscapes",
+        title: "Sandwich Harbour Exploration",
+        image: "/cover.jpg",
+        shortDescription: "Where rolling dunes meet the Atlantic, Sandwich Harbour - part of the Namib Naukluft Park - feels otherworldly.",
         location: "Namibia"
       },
+      bookingLink: "https://www.experiencesbybeyond.com/book-experience/sandwich-harbour-exploration",
       tags: []
     },
     {
       id: "3",
-      slug: "coastal-retreat", 
+      slug: "dolphin-watching-and-snorkeling", 
       defaultContent: {
-        title: "Coastal Retreat",
-        image: "/coastal-villa-ocean-view.jpg",
-        shortDescription: "Exclusive coastal villas with ocean views",
+        title: "Dolphin Watching and Snorkeling",
+        image: "/cover.jpeg",
+        shortDescription: "Adventure and calm meet on Volta Lake. Abseil from rocky cliffs, kayak through quiet waters, and end the day with a golden-hour boat cruise under the open sky.",
         location: "São Tomé"
       },
+      bookingLink: "https://www.experiencesbybeyond.com/book-experience/dolphin-watching-and-snorkeling",
       tags: []
     },
     {
       id: "4",
-      slug: "urban-adventure", 
+      slug: "kente-and-rhythm", 
       defaultContent: {
-        title: "Urban Adventure",
-        image: "/lagos-nigeria-cityscape-modern-skyline.jpg",
-        shortDescription: "Discover vibrant city life and cultural experiences",
-        location: "Nigeria"
+        title: "Kente and Rhythm",
+        image: "/cover1.jpg",
+        shortDescription: "Dive into Ghana's cultural heartbeat at the Accra Arts Centre.",
+        location: "Ghana"
       },
+      bookingLink: "https://www.experiencesbybeyond.com/book-experience/kente-and-rhythm",
       tags: []
     },
   ]
@@ -71,20 +75,21 @@ export function FeaturedExperiences() {
                         fill
                         className="object-cover"
                       />
+                      <div className="absolute inset-0 bg-black/30" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                       <div className="absolute bottom-0 left-0 right-0 px-6 pt-6 pb-2">
-                        <h4 className="text-2xl font-serif font-normal text-white mt-2 mb-3">{experience.defaultContent.title}</h4>
-                        <p className="text-white/90 mb-4 max-w-md font-sans leading-relaxed">
+                        <h4 className="text-xl font-serif font-normal text-white mt-2 mb-2">{experience.defaultContent.title}</h4>
+                        <p className="text-white/90 text-sm mb-3 max-w-md font-sans leading-relaxed">
                           {experience.defaultContent.shortDescription}
                         </p>
                         <div className="space-y-6">
-                          <Link href={"/book-experience"}>
-                            <Button className="bg-gray-900  text-white hover:bg-gray-900/90 font-sans px-12 py-4 rounded-lg w-full mb-3">
+                          <Link href={experience.bookingLink}>
+                            <Button className="bg-gray-900  text-white hover:bg-gray-900/90 font-sans px-12 py-4 rounded-lg text-xs w-full mb-1.5">
                               Book this experience
                             </Button>
                           </Link>
-                          <Link href={"/experiences"}>
-                            <Button variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-sans px-12 py-4 rounded-lg w-full mb-4">
+                          <Link href={"https://www.experiencesbybeyond.com/experiences"}>
+                            <Button variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-sans text-xs px-12 py-4 rounded-lg w-full mb-4">
                               Explore experiences
                             </Button>
                           </Link>

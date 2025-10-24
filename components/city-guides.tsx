@@ -1,4 +1,5 @@
 import { Building2 } from "lucide-react"
+import Link from "next/link"
 
 export function CityGuides() {
   const cities = [
@@ -8,6 +9,7 @@ export function CityGuides() {
       image: "/accra-ghana-independence-arch-monument.jpg",
       bgColor: "bg-[#F5E6D3]", // Champagne
       textColor: "text-gray-900",
+      link: "/city/accra-ghana",
     },
     {
       name: "Lagos, Nigeria",
@@ -15,6 +17,7 @@ export function CityGuides() {
       image: "/lagos-nigeria-windmill-landmark.jpg",
       bgColor: "bg-[#2D5016]", // Green
       textColor: "text-white",
+      link: "/city/lagos-nigeria",
     },
     {
       name: "Nairobi, Kenya",
@@ -22,6 +25,7 @@ export function CityGuides() {
       image: "/nairobi-kenya-skyline-cityscape.jpg",
       bgColor: "bg-[#D97642]", // Orange
       textColor: "text-white",
+      link: "/city/nairobi-kenya",
     },
     {
       name: "Sao Tome, Sao Tome",
@@ -29,6 +33,7 @@ export function CityGuides() {
       image: "/cape-town-table-mountain-landscape.jpg",
       bgColor: "bg-[#1A2332]", // Blue-black
       textColor: "text-white",
+      link: "/city/sao-tome",
     },
   ]
 
@@ -44,8 +49,8 @@ export function CityGuides() {
         <div className="relative">
           <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
             {cities.map((city, index) => (
+              <Link href={city.link} key={index}>
               <div
-                key={index}
                 className={`flex-shrink-0 w-[250px] h-[80px] flex items-stretch shadow-sm hover:shadow-md transition-shadow overflow-hidden snap-start rounded-2xl ${city.bgColor}`}
               >
                 <div className="w-[80px] h-[80px] flex-shrink-0 overflow-hidden">
@@ -64,6 +69,7 @@ export function CityGuides() {
                   </p>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>
