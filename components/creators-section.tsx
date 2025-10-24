@@ -14,7 +14,11 @@ export function CreatorsSection() {
           Want to curate an experience or interested in selling an experience? We'd love to hear from you.
         </p>
         <div className="flex justify-start">
-          <Button size="default" className="bg-[#F5E6D3] text-black hover:bg-[#F5E6D3]/90 rounded-lg px-8 text-sm font-medium w-full">
+          <Button
+            size="default"
+            className="bg-[#F5E6D3] text-black hover:bg-[#F5E6D3]/90 rounded-lg px-8 text-sm font-medium w-full"
+            onClick={() => (window.location.href = "mailto:concierge@experiencesbybeyond.com")}
+          >
             Get in touch
           </Button>
         </div>
