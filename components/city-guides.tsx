@@ -9,7 +9,7 @@ export function CityGuides() {
       image: "/accra-ghana-independence-arch-monument.jpg",
       bgColor: "bg-[#F5E6D3]", // Champagne
       textColor: "text-gray-900",
-      link: "/city/accra-ghana",
+      link: "https://drive.google.com/file/d/1a_9X-C1tAp6V7ll544F3SUHhSWImKSgc/view?usp=sharing",
     },
     {
       name: "Nigeria",
