@@ -83,17 +83,17 @@ export function SiteFooter() {
                 <h3 className="text-xs font-sans text-gray-300 font-semibold uppercase tracking-wider mb-1">EXPLORE</h3>
                 <p className="text-xs text-gray-400 mb-4 font-sans">Discover our curated journeys</p>
                 <ul className="space-y-0.5">
-                  <li><Link href="/experiences" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">Experiences</Link></li>
+                  <li><Link href="https://www.experiencesbybeyond.com/experiences" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">Experiences</Link></li>
                   {/* <li><Link href="/city-guides" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">City Guides</Link></li> */}
                   <li><Link href="https://www.beyondaccra.com/" className="text-white hover:text-gray-300 transition-colors font-sans text-sm" target="_blank" rel="noopener noreferrer" title="Bespoke Travel">Bespoke Travel</Link></li>
-                  <li><Link href="/about" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">About Us</Link></li>
+                  <li><Link href="https://www.experiencesbybeyond.com/about" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">About Us</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xs font-sans text-gray-300 font-semibold uppercase tracking-wider mb-1">SUPPORT</h3>
                 <p className="text-xs text-gray-400 mb-4 font-sans">Here when you need us</p>
                 <ul className="space-y-0.5">
-                  <li><Link href="/#faq" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">FAQs</Link></li>
+                  <li><Link href="https://www.experiencesbybeyond.com/#faq" className="text-white hover:text-gray-300 transition-colors font-sans text-sm">FAQs</Link></li>
                   <li><Link href="https://www.beyondaccra.com/terms-and-conditions" className="text-white hover:text-gray-300 transition-colors font-sans text-sm" target="_blank" rel="noopener noreferrer" title="Terms & Conditions">Terms & Conditions</Link></li>
                   <li><Link href="https://www.beyondaccra.com/privacy-policy" className="text-white hover:text-gray-300 transition-colors font-sans text-sm" target="_blank" rel="noopener noreferrer" title="Privacy Policy">Privacy Policy</Link></li>
                 </ul>
