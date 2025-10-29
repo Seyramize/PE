@@ -6,6 +6,32 @@ import { useState } from "react"
 
 export function InviteCodeSection() {
   const [code, setCode] = useState("")
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const handleUnlock = async () => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      const inviteCodes: { [key: string]: string } = {
+        bxchloe: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=bxchloe",
+        bxnoah: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=bxnoah",
+        // Add other codes and their corresponding URLs here
+      }
+
+      if (inviteCodes[code]) {
+        window.location.href = inviteCodes[code]
+      } else {
+        setError("Invalid invite code. Please try again.")
+      }
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <section className="py-8 px-6">
@@ -42,15 +68,20 @@ export function InviteCodeSection() {
                 placeholder="Invite Code"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
+                disabled={loading}
                 className="h-10 bg-gray-50 text-gray-900 border border-gray-900 rounded-2xl px-4 text-center text-xs placeholder-gray-400"
               />
               <Button
                 size="default"
+                onClick={handleUnlock}
+                disabled={loading}
                 className="w-full h-10 bg-[#1A2332] text-white hover:bg-[#1A2332]/90 rounded-2xl text-xs font-medium"
               >
-                Unlock Access
+                {loading ? "Unlocking..." : "Unlock Access"}
               </Button>
             </div>
+
+            {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
           </div>
         </div>
       </div>

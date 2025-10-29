@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
 import { X } from "lucide-react"
+import { useState } from "react"
 
 export function InviteModal({
   open,
@@ -20,6 +21,34 @@ export function InviteModal({
   open: boolean
   onOpenChange: (open: boolean) => void
 }) {
+  const [code, setCode] = useState("")
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const handleUnlock = async () => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      const inviteCodes: { [key: string]: string } = {
+        bxchloe: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=bxchloe",
+        bxnoah: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=bxnoah",
+        // Add other codes and their corresponding URLs here
+      }
+
+      if (inviteCodes[code]) {
+        window.location.href = inviteCodes[code]
+      } else {
+        setError("Invalid invite code. Please try again.")
+      }
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="p-0 max-w-xs rounded-lg overflow-hidden border-none gap-0">
@@ -55,9 +84,23 @@ export function InviteModal({
             your experience.
           </p>
           <div className="space-y-2">
-            <Input placeholder="Invite Code" className="text-center h-10 rounded-xl text-xs border-gray-900 placeholder:text-zinc-400" />
-            <Button size="default" className="w-full rounded-xl text-xs bg-gray-900 text-white">Unlock Access</Button>
+            <Input
+              placeholder="Invite Code"
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              disabled={loading}
+              className="text-center h-10 rounded-xl text-base border-gray-900 placeholder:text-zinc-400"
+            />
+            <Button
+              size="default"
+              onClick={handleUnlock}
+              disabled={loading}
+              className="w-full rounded-xl text-xs bg-gray-900 text-white"
+            >
+              {loading ? "Unlocking..." : "Unlock Access"}
+            </Button>
           </div>
+          {error && <p className="text-red-500 text-xs mt-2 text-center">{error}</p>}
         </div>
       </DialogContent>
     </Dialog>
