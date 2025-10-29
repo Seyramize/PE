@@ -5,7 +5,7 @@ export function CityGuides() {
   const cities = [
     {
       name: "Ghana",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Heritage, rhythm, and warmth converge in Africa’s golden heart.",
       image: "/accra-ghana-independence-arch-monument.jpg",
       bgColor: "bg-[#F5E6D3]", // Champagne
       textColor: "text-gray-900",
@@ -13,7 +13,7 @@ export function CityGuides() {
     },
     {
       name: "Nigeria",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Boundless energy, bold culture, and creativity that never sleeps.",
       image: "/lagos-nigeria-windmill-landmark.jpg",
       bgColor: "bg-[#2D5016]", // Green
       textColor: "text-white",
@@ -21,15 +21,15 @@ export function CityGuides() {
     },
     {
       name: "Namibia",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Endless dunes, vast skies, and silence shaped by beauty.",
       image: "/nairobi-kenya-skyline-cityscape.jpg",
       bgColor: "bg-[#D97642]", // Orange
       textColor: "text-white",
       link: "/city/nairobi-kenya",
     },
     {
-      name: "Sao Tome",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "Sao Tome & Principe",
+      description: "Lush rainforests, black sands, and timeless island tranquillity await.",
       image: "/cape-town-table-mountain-landscape.jpg",
       bgColor: "bg-[#1A2332]", // Blue-black
       textColor: "text-white",
