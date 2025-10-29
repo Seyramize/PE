@@ -28,7 +28,7 @@ export function CityGuides() {
       link: "/city/nairobi-kenya",
     },
     {
-      name: "Sao Tome & Principe",
+      name: "São Tomé",
       description: "Lush rainforests, black sands, and timeless island tranquillity await.",
       image: "/cape-town-table-mountain-landscape.jpg",
       bgColor: "bg-[#1A2332]", // Blue-black
