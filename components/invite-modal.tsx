@@ -34,13 +34,15 @@ export function InviteModal({
       await new Promise((resolve) => setTimeout(resolve, 1000))
 
       const inviteCodes: { [key: string]: string } = {
-        bxchloe: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=bxchloe",
+        travelsocial: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=travelsocial",
         bxnoah: "https://experiencesbybeyond.com/book-experience/december-in-ghana-castles-to-coastlines?code=bxnoah",
         // Add other codes and their corresponding URLs here
       }
 
-      if (inviteCodes[code]) {
-        window.location.href = inviteCodes[code]
+      const lowercasedCode = code.toLowerCase()
+
+      if (inviteCodes[lowercasedCode]) {
+        window.location.href = inviteCodes[lowercasedCode]
       } else {
         setError("Invalid invite code. Please try again.")
       }
